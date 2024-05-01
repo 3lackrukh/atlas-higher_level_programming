@@ -13,4 +13,10 @@ if number < 0:
     else:
         print (str1, number, str2, (last_digit * -1) ,str4, sep=' ')
 else:
-    print (str1, number, str2, last_digit, sep=' ')
+    if last_digit > 5:
+        print (str1, number, str2, last_digit, str3, sep=' ')
+    elif last_digit == 0:
+        print (str1, number, str2, last_digit, str5, sep=' ')
+    else:
+        print (str1, number, str2, last_digit, str4, sep=' ')
+        
