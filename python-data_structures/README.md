@@ -1,0 +1,1 @@
+This directory contains files created to practice data structure concepts in Python 3.
