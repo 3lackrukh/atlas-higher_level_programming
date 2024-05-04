@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 def max_integer(my_list=[]):
-    Mac = 0
     if len(my_list) == 0:
         return None
+    Mac = my_list[0]
     for i in my_list:
         if i > Mac:
             Mac = i
