@@ -2,11 +2,11 @@
 def best_score(a_dictionary):
     if not a_dictionary or not any(a_dictionary.values()):
         return None
-    high_score = next(value for value in a_dictionary.values() if value is not None)
-    for key, value in a_dictionary.items():
-        if value is None:
+    high_score = next(val for val in a_dictionary.values() if val is not None)
+    for key, val in a_dictionary.items():
+        if val is None:
             continue
-        if value >= high_score:
-            high_score = value
+        if val >= high_score:
+            high_score = val
             champ = key
     return champ
