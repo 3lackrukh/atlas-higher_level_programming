@@ -1,0 +1,1 @@
+This directory contains files created to exercise error handling and exceptions concepts in Python 3.
