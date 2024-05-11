@@ -5,10 +5,9 @@ Module defines geometric class Square.
 Currently empty for exercise purposes.
 """
 
-class Square:
 
+class Square:
     """
     Currently empty for ecercise purposes.
     """
     pass
-
