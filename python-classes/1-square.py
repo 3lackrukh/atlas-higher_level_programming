@@ -8,7 +8,7 @@ Module defines geometric class Square.
 class Square:
     """
     Class represents a square.
-    
+
     Attributes:
         size (int): length of the sides.
     """
