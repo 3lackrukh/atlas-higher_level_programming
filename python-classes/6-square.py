@@ -19,7 +19,7 @@ class Square:
         Initialize new Square instance.
         """
 
-        self.size = size 
+        self.size = size
         self.position = position
 
     @property
@@ -37,7 +37,7 @@ class Square:
     @property
     def position(self):
         return (self.__position)
-    
+
     @position.setter
     def position(self, value):
         if (not isinstance(value, tuple) or
@@ -65,8 +65,7 @@ class Square:
                 print("")
             for i in range(0, self.__size):
                 for k in range(0, self.__position[0]):
-                        print(" ", end="")
+                    print(" ", end="")
                 for k in range(0, self.__size):
                     print("#", end="")
                 print()
-
