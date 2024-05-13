@@ -1,0 +1,20 @@
+# Import the add_integer function
+>>> add_integer = __import__('0-add_integer').add_integer
+
+# Doctest for the add_integer function
+
+# Check if integers add correctly
+>>> add_integer(5, 7)
+12
+>>> add_integer(102)
+200
+>>> add_integer(1024, -256)
+768
+
+# Check if floats add correctly
+>>> add_integer(12.1, 3.9)
+15
+>>> add_integer(2.5, 12)
+14
+>>> add_integer(3, 3.14)
+6
