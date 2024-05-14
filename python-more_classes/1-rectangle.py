@@ -11,10 +11,12 @@ class Rectangle:
 
     Attributes:
         width (int): length of the x-axis.
+        height (int): length of the y-axis.
     """
 
-    def __init__(self, width):
+    def __init__(self, height, width):
         """
         Initialize new Rectangle instance.
         """
+        self.__height = height
         self.__width = width
