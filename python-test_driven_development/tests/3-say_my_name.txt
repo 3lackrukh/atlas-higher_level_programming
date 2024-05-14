@@ -1,0 +1,22 @@
+# import the say_my_name method
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+# Doctest for say_my_name method
+
+# Check if string values concatenate
+>>> say_my_name('Nathan', 'Rhys')
+My name is Nathan Rhys
+
+# Check no last_name
+>>> say_my_name('Albus')
+My name is Albus 
+
+# Check if non-string arguments
+>>> say_my_name('Sam', 44)
+Traceback (most recent call last):
+    ...
+TypeError: last_name must be a string
+>>> say_my_name(None, 'Dumbledore')
+Traceback (most recent call last):
+    ...
+TypeError: first_name must be a string
