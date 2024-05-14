@@ -7,4 +7,8 @@
 >>> matrix_divided([[2, 4, 6], [1, 3.3, 5]], 2)
 [[1.0, 2.0, 3.0], [0.5, 1.65, 2.5]]
 
-
+# Check for div = string
+>>> matrix_divided([[1, 3, 5], [7, 11, 23]], 'pi')
+Traceback (most recent call last):
+    ...
+TypeError: div must be a number
