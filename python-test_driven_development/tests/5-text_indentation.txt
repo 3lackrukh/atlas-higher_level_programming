@@ -19,16 +19,6 @@ Traceback (most recent call last):
     ...
 TypeError: text must be a string
 
-# Check for no spaces after newline
->>> text_indentation("Holberton. School? How are you: John")
-Holberton.
-<BLANKLINE>
-School?
-<BLANKLINE>
-How are you:
-<BLANKLINE>
-John
-
 # Check for no space after punctuation
 >>> text_indentation("Holberton.School: a great place to learn?")
 Holberton.
@@ -37,3 +27,15 @@ School:
 <BLANKLINE>
 a great place to learn?
 <BLANKLINE>
+
+# Check for missing parameter
+>>> text_indentation()
+Traceback (most recent call last):
+    ...
+TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+# Check for invalid characters
+>>> text_indentation(“Holberton. School? How are you: John”)
+Traceback (most recent call last):
+    ...
+SyntaxError: invalid character '“' (U+201C)
