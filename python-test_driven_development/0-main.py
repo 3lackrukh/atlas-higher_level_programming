@@ -10,6 +10,6 @@ try:
 except Exception as e:
     print(e)
 try:
-    print(add_integer(1, (float('NaN'))))
+    print(add_integer(1, (1 + (float('inf')))))
 except Exception as e:
     print(e)
