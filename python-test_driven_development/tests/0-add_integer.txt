@@ -1,7 +1,7 @@
-# Import the add_integer function
+# Import the add_integer method
 >>> add_integer = __import__('0-add_integer').add_integer
 
-# Doctest for the add_integer function
+# Doctest for the add_integer method
 
 # Check if integers add correctly
 >>> add_integer(5, 7)
