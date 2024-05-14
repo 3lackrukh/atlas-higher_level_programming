@@ -28,7 +28,8 @@ def text_indentation(text):
             print(i + "\n\n", end="")
             skip = True
         elif skip:
+            skip = False
             continue
-        else: 
+        else:
             print(i, end="")
-        skip = False
+
