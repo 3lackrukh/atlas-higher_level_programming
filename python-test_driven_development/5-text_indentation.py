@@ -28,8 +28,8 @@ def text_indentation(text):
             print(i + "\n\n", end="")
             skip = True 
         elif skip and i == ' ':
-            skip = False
             continue
         else:
             print(i, end="")
+            skip = False
 

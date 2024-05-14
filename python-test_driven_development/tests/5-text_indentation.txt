@@ -39,3 +39,13 @@ TypeError: text_indentation() missing 1 required positional argument: 'text'
 Traceback (most recent call last):
     ...
 SyntaxError: invalid character '“' (U+201C)
+
+# Check for multiple spaces after punctuation
+>>> text_indentation("Holberton. School? How are you:    John")
+Holberton.
+<BLANKLINE>
+School?
+<BLANKLINE>
+How are you:
+<BLANKLINE>
+John
