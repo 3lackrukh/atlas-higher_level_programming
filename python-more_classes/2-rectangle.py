@@ -40,9 +40,9 @@ class Rectangle:
         """
         return (self.__width * self.__height)
     
-    def perimiter(self):
+    def perimeter(self):
         """
-        Method calculates the perimiter of instance Rectangle
+        Method calculates the perimeter of instance Rectangle
         """
         return (2 * (self.__width + self.__height))
         
