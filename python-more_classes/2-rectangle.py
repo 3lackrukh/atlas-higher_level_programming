@@ -38,13 +38,13 @@ class Rectangle:
         """
         Method calculates the area of instance Rectangle
         """
-        return (width * height)
+        return (self.__width * self.__height)
     
     def perimiter(self):
         """
         Method calculates the perimiter of instance Rectangle
         """
-        return (2 * (width + height))
+        return (2 * (self.__width + self.__height))
         
     @property
     def width(self):
