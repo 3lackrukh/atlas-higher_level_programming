@@ -21,9 +21,14 @@ def text_indentation(text):
     if not isinstance(text, str):
         raise TypeError("text must be a string")
     
-  
+    skip = False
+
     for i in text:
         if i in (".", "?", ":"):
             print(i + "\n\n", end="")
+            skip = True
+        elif skip:
+            continue
         else: 
             print(i, end="")
+        skip = False
