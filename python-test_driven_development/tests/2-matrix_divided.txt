@@ -18,3 +18,15 @@ TypeError: div must be a number
 Traceback (most recent call last):
     ...
 ZeroDivisionError: division by zero
+
+# Check for non-number matrix values
+>>> matrix_divided([[3, 'six', 9], [2, 4, 6]], 10)
+Traceback (most recent call last):
+    ...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+# Check for rows of differing length
+>>> matrix_divided([[3, 4, 6, 8], [1, 7, 2]], 12)
+Traceback (most recent call last):
+    ...
+TypeError: Each row of the matrix must have the same size
