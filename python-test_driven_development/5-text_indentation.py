@@ -26,8 +26,8 @@ def text_indentation(text):
     for i in text:
         if i in (".", "?", ":"):
             print(i + "\n\n", end="")
-            skip = True
-        elif skip:
+            skip = True 
+        elif skip and i == ' ':
             skip = False
             continue
         else:

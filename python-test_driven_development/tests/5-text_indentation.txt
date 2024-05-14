@@ -28,3 +28,12 @@ School?
 How are you:
 <BLANKLINE>
 John
+
+# Check for no space after punctuation
+>>> text_indentation("Holberton.School: a great place to learn?")
+Holberton.
+<BLANKLINE>
+School:
+<BLANKLINE>
+a great place to learn?
+<BLANKLINE>
