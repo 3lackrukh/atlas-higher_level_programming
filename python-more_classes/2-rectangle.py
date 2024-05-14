@@ -34,17 +34,17 @@ class Rectangle:
         self.__height = height
         self.__width = width
 
-        def area(self):
-            """
-            Method calculates the area of instance Rectangle
-            """
-            return (width * height)
+    def area(self):
+        """
+        Method calculates the area of instance Rectangle
+        """
+        return (width * height)
     
-        def perimiter(self):
-            """
-            Method calculates the perimiter of instance Rectangle
-            """
-            return (2 * (width + height))
+    def perimiter(self):
+        """
+        Method calculates the perimiter of instance Rectangle
+        """
+        return (2 * (width + height))
         
     @property
     def width(self):
