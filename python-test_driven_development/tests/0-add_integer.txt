@@ -18,3 +18,19 @@
 14
 >>> add_integer(3, 3.14)
 6
+
+# Check if non-ints or non-floats raise TypeError
+>>> add_integer("home", 2)
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
+>>> add_integer(8, 's')
+Traceback (most recent call last):
+    ...
+TypeError: b must be an integer
+
+# Check if no input raises TypeError
+>>> add_integer(None)
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
