@@ -1,0 +1,12 @@
+# Import the text_indentation module
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+# Doctest for the text_indentation module
+
+# Check for non-str parameter
+>>> text_indentation(55.1)
+Traceback (most recent call last):
+    ...
+TypeError: text must be a string
+
+#
