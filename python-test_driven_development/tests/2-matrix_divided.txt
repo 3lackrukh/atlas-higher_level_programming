@@ -18,6 +18,8 @@ TypeError: div must be a number
 Traceback (most recent call last):
     ...
 ZeroDivisionError: division by zero
+
+# Check for div = float('inf') all values 0.0
 >>> matrix_divided([[0.0, 0.0], [0.0, 0.0]], (float('inf')))
 [[0.0, 0.0], [0.0, 0.0]]
 
