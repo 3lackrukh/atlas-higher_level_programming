@@ -1,0 +1,32 @@
+# Import the print_square module.
+>>> print_square = __import__('4-print_square').print_square
+
+# Doctest for print_square module
+
+# Check for integer parameter
+>>> print_square(4)
+####
+####
+####
+####
+
+# Check for float parameter
+>>> print_square(3.14)
+Traceback (most recent call last):
+    ...
+TypeError: size must be an integer
+
+# Check for string parameter
+>>> print_square('three')
+Traceback (most recent call last):
+    ...
+TypeError: size must be an integer
+
+# Check for size 0
+>>> print_square(0)
+
+# Check for size < 0
+>>> print_square(-12)
+Traceback (most recent call last):
+    ...
+ValueError: size must be >= 0
