@@ -69,4 +69,4 @@ class Rectangle:
         """
         Method calculates the perimiter of instance Rectangle
         """
-        return (2 x (self.__width + self.__height))
+        return (2 * (self.__width + self.__height))
