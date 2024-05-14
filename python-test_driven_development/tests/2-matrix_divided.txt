@@ -19,8 +19,8 @@ Traceback (most recent call last):
     ...
 ZeroDivisionError: division by zero
 
-# Check for div = float('inf') all values 0.0
->>> matrix_divided([[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]], (float('inf')))
+# Check for div = float('inf')
+>>> matrix_divided([[110, 2, 35], [12, 270, 1000000]], (float('inf')))
 [[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
 
 # Check for non-number matrix values
