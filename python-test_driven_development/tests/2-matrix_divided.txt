@@ -18,6 +18,8 @@ TypeError: div must be a number
 Traceback (most recent call last):
     ...
 ZeroDivisionError: division by zero
+>>> matrix_divided([[0.0, 0.0], [0.0, 0.0]], (float('inf')))
+[[0.0, 0.0], [0.0, 0.0]]
 
 # Check for non-number matrix values
 >>> matrix_divided([[3, 'six', 9], [2, 4, 6]], 10)
