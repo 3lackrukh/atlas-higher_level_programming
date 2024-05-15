@@ -47,7 +47,7 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return (0)
         return (2 * (self.__width + self.__height))
-    
+
     def print(self):
         """
         Method prints instance of Rectangle
@@ -66,11 +66,11 @@ class Rectangle:
             return ""
         else:
             r_mtrx = ""
-            for l in range(self.__height - 1):
+            for i in range(self.__height - 1):
                 r_mtrx += "#" * self.__width + "\n"
             r_mtrx += "#" * self.__width
             return r_mtrx
-    
+
     def __repr__(self):
         return f"<3-rectangle.Rectangle object at{hex(id(self))}>"
 
