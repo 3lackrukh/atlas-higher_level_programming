@@ -18,7 +18,7 @@ class Rectangle:
         ValueError: if height or width are not of type int.
     """
     number_of_instances = 0
-    print_symbol
+    print_symbol = "#"
 
     def __init__(self, width=0, height=0):
         """
@@ -70,8 +70,8 @@ class Rectangle:
         else:
             r_mtrx = ""
             for i in range(self.__height - 1):
-                r_mtrx += "#" * self.__width + "\n"
-            r_mtrx += "#" * self.__width
+                r_mtrx += "{}".format(self.print_symbol) * self.__width + "\n"
+            r_mtrx += "{}",format(self.print_symbol) * self.__width
             return r_mtrx
 
     def __repr__(self):
