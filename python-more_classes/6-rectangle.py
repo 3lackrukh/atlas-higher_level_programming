@@ -17,6 +17,7 @@ class Rectangle:
         TypeError: if height or width are not type int.
         ValueError: if height or width are not of type int.
     """
+    Number_of_instances = 0
 
     def __init__(self, width=0, height=0):
         """
@@ -33,7 +34,7 @@ class Rectangle:
 
         self.height = height
         self.width = width
-        self.number_of_instances = 1
+        self.number_of_instances += 1
 
     def area(self):
         """
