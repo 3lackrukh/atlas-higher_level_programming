@@ -72,7 +72,7 @@ class Rectangle:
             return r_mtrx
     
     def __repr__(self):
-        return "Rectangle({}, {})".format(self.__width,self.__height)
+        return f"<3-rectangle.Rectangle object at{hex(id(self))}>"
 
     @property
     def width(self):
