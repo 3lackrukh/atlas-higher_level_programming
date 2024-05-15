@@ -33,7 +33,7 @@ class Rectangle:
 
         self.height = height
         self.width = width
-        self.number_of_instances +=1
+        self.number_of_instances = 1
 
     def area(self):
         """
