@@ -61,7 +61,7 @@ class Rectangle:
         else:
             for i in range(0, self.__height):
                 for k in range(0, self.__width):
-                    print("#", end="")
+                    print(self.print_symbol, end="")
             print()
 
     def __str__(self):
@@ -70,8 +70,9 @@ class Rectangle:
         else:
             r_mtrx = ""
             for _ in range(self.__height - 1):
-                r_mtrx += (self.print_symbol * self.__width) + "\n"
-            r_mtrx += self.print_symbol * self.__width
+                r_mtrx += "{}".format(self.print_symbol) * self.__width
+                if _ < self.__height - 1:
+                    r_mtrx += '\n'
         return r_mtrx
 
     def __repr__(self):

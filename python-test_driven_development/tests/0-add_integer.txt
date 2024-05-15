@@ -46,3 +46,9 @@ ValueError: cannot convert float NaN to integer
 Traceback (most recent call last):
     ...
 OverflowError: cannot convert float infinity to integer
+
+# Check for blah
+>>> add_integer(124, 'this is not addable')
+Traceback (most recent call last):
+    ...
+TypeError: b must be an integer
