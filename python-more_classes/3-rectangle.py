@@ -70,10 +70,7 @@ class Rectangle:
                 r_mtrx += "#" * self.__width + "\n"
             r_mtrx += "#" * self.__width
             return r_mtrx
-
-    def __repr__(self):
-        return f"<3-rectangle.Rectangle object at{hex(id(self))}>"
-
+        
     @property
     def width(self):
         return (self.__width)
