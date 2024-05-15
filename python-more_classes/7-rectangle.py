@@ -69,7 +69,7 @@ class Rectangle:
             return ""
         else:
             r_mtrx = ""
-            for _ in range(self.__height - 1):
+            for _ in range(self.__height):
                 r_mtrx += "{}".format(self.print_symbol) * self.__width
                 if _ < self.__height - 1:
                     r_mtrx += '\n'
