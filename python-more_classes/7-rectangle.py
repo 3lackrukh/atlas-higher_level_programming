@@ -18,6 +18,7 @@ class Rectangle:
         ValueError: if height or width are not of type int.
     """
     number_of_instances = 0
+    print_symbol
 
     def __init__(self, width=0, height=0):
         """
