@@ -69,10 +69,10 @@ class Rectangle:
             return ""
         else:
             r_mtrx = ""
-            for i in range(self.__height - 1):
-                r_mtrx += "{}{}".format(self.print_symbol) * self.__width + "\n"
-            r_mtrx += "{}",format(self.print_symbol) * self.__width
-            return r_mtrx
+            for _ in range(self.__height - 1):
+                r_mtrx += (self.print_symbol * self.__width) + "\n"
+            r_mtrx += self.print_symbol * self.__width
+        return r_mtrx
 
     def __repr__(self):
         return "Rectangle({}, {})".format(self.__width, self.__height)
