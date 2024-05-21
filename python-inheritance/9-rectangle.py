@@ -32,7 +32,7 @@ class Rectangle(BaseGeometry):
         Method calculates the area of instance Rectangle
         """
         return (self.__width * self.__height)
-    
+
     def __str__(self):
         """
 
