@@ -1,15 +1,18 @@
 #!/usr/bin/python3
-#!/usr/bin/python3
-lookup = __import__('0-lookup').lookup
+"""
+    Module providing utility method: lookup
+"""
 
-class MyClass1(object):
-    pass
 
-class MyClass2(object):
-    my_attr1 = 3
-    def my_meth(self):
-        pass
+def lookup(obj):
 
-print(lookup(MyClass1))
-print(lookup(MyClass2))
-print(lookup(int))
+    """
+        Create a list of object's attributes and methods.
+
+        Parameters:
+            obj (object): the object to be examined.
+
+        Returns:
+            list: a list of the object's attributes and methods.
+    """
+    return list(dir(obj))
