@@ -11,7 +11,7 @@ def from_json_string(my_str):
         Parameters:
             my_str: the json format string to be converted
             to a python object.
-        
+
         Returns: a python object
     """
     return json.loads(my_str)
