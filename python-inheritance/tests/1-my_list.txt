@@ -31,3 +31,7 @@
 >>> my_list.print_sorted()
 [(4, 2), (12, 1)]
 
+# Check __str__ method for correct format
+>>> my_list = MyList([1, 2, 3])
+>>> str(my_list)
+'[1, 2, 3]'
