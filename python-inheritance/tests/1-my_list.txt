@@ -43,8 +43,8 @@
 [1, 2, 2.3, 2.9, 3]
 
 # check for new list object
->>> my_list = MyList([2, 5, 7])
->>> new_list = my_list.print_sorted()
+>>> my_list = MyList([2, 7, 5])
+>>> my_list.print_sorted()
 [2, 5, 7]
->>> new_list == my_list
-False
+>>> print(my_list)
+[2, 7, 5]
