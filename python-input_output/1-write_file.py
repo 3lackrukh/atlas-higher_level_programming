@@ -11,7 +11,7 @@ def write_file(filename="", text=""):
         Parameters:
             filename (str): the name of the file to write to.
             text (str): the text to be written to the file.
-            
+    
         Returns:
             char_ct (int): the number of characters written.
     """
