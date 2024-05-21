@@ -4,21 +4,21 @@
 """
 BaseGeometry = __import__("7-base_geometry").BaseGeometry
 
-"""
-    Class represents a Rectangle.
-
-    Attributes:
-        width (int): length of the x-axis. Default 0
-        height (int): length of the y-axis. Default 0
-
-    Methods:
-        area: inherited from BaseGeometry (not implemented)
-
-        integer_validator from BaseGeometry
-            - validates input is integer
-"""
 class Rectangle(BaseGeometry):
 
+    """
+        Class represents a Rectangle.
+
+        Attributes:
+            width (int): length of the x-axis. Default 0
+            height (int): length of the y-axis. Default 0
+
+        Methods:
+            area: inherited from BaseGeometry (not implemented)
+
+            integer_validator from BaseGeometry
+                - validates input is integer
+    """
     def __init__(self, width, height):
 
         self.integer_validator("width", width)
