@@ -33,10 +33,11 @@ Traceback (most recent call last):
 ...
 Exception: area() is not implemented
 
+# Check case too many arguments for area
 >>> b.area(1)
 Traceback (most recent call last):
 ...
-TypeError: BaseGeometry.area() takes 1 positional argument but 2 were given
+TypeError: area() takes 1 positional argument but 2 were given
 
 # Check error raising in integer_validator method
 >>> b.integer_validator("name", "John")
