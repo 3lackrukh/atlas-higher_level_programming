@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
     This module contains the class_to_json method which
-    translates a python class to a dict. 
+    translates a python class to a dict.
 """
 
 
