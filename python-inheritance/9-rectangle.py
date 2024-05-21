@@ -15,7 +15,7 @@ class Rectangle(BaseGeometry):
             height (int): length of the y-axis. Default 0
 
         Methods:
-            area: inherited from BaseGeometry (not implemented)
+            area: calculates the area of the Rectangle
 
             integer_validator from BaseGeometry
                 - validates input is integer
