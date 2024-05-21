@@ -3,6 +3,8 @@
     This module contains a method which
     appends a string to the end of a text file.
 """
+
+
 def append_write(filename="", text=""):
     """
         Parameters:
