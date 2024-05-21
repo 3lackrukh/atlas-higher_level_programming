@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-    Module compares object class with a user specified class.
+    Module checks object class against a user specified class.
 """
 
 
