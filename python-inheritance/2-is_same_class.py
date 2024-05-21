@@ -9,7 +9,7 @@ def is_same_class(obj, a_class):
         Compares types with equality operator
 
         Returns:
-            True (bool): if the object is of specified class.
+            True (bool): if the object is a specified class.
             False (bool): if not.
     """
     return (type(obj) is a_class)
