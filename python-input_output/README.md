@@ -1,0 +1,1 @@
+This directory contains files created to practice input output stream concept in Python 3.
