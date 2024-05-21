@@ -1,0 +1,41 @@
+# Doc test for 7-base_geometry.py
+"""
+    Test area method and integer_validator for expected error raising.
+"""
+
+# Import module
+>>> BG = __import__("7-base_geometry").base_geometry
+
+# Check for module documentation
+>>> m = __import__(base_geometry).__doc__
+>>> len(m) > 1
+True
+
+# Check for class documentation
+>>> c = __import__("7-base_geometry").BaseGeometry.__doc__
+>>> len(c) > 1
+True
+
+# Check for method documentation area
+>>> meth_area = __import__("7-base_geometry").BaseGeometry.area.__doc__
+>>> len(meth_area) > 1
+True
+
+# Check for method documentation integer_validator
+>>> meth_int_vldtr = __import__("7-base_geometry").BaseGeometry.integer_validator.__doc__
+>>> len(meth_int_vldtr) > 1
+True
+
+# Check exception raising in area method
+>>> b = BG()
+>>> b.area()
+Traceback (most recent call last):
+...
+Exception: area () is not implemented
+
+>>> b.area(1)
+Traceback (most recent call last):
+...
+TypeError: area() takes 1 positional argument but 2 were given
+
+#
