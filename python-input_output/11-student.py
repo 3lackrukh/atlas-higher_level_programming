@@ -11,7 +11,7 @@ class Student:
             - last_name (str)
             - age (int)
         Methods:
-            - to_json: 
+            - to_json:
                 retrieves dictionary representation of attributes
             - reload_from_json:
                 replaces all attributes of instance Student
