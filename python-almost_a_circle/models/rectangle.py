@@ -7,6 +7,7 @@
 
 from models.base import Base
 
+
 class Rectangle(Base):
     """
         Attributes:
@@ -24,7 +25,7 @@ class Rectangle(Base):
         self.__height = height
         self.__x = x
         self.__y = y
-        
+
     @property
     def height(self):
         return self.__height
