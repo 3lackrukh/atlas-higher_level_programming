@@ -81,7 +81,7 @@ class Rectangle(Base):
         """
         return (self.__width * self.__height)
 
- def display(self):
+    def display(self):
         """
         Method prints instance of Rectangle
         represented by '#'.
