@@ -1,8 +1,7 @@
 #!/usr/bin/python3
-""" 
+"""
     This module defines class Base.
 """
-
 
 
 class Base:
