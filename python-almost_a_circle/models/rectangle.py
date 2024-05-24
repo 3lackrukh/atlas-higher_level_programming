@@ -80,3 +80,20 @@ class Rectangle(Base):
         Method calculates the area of instance Rectangle
         """
         return (self.__width * self.__height)
+
+ def display(self):
+        """
+        Method prints instance of Rectangle
+        represented by '#'.
+        """
+        if self.area == 0:
+            print()
+        else:
+            for i in range(0, self.y):
+                print("/n")
+            for i in range(0, self.__height):
+                for k in range(0, self.y):
+                    print(" ", end="")
+                for k in range(0, self.__width):
+                    print("#", end="")
+                print()
