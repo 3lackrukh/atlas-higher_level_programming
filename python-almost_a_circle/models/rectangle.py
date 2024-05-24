@@ -92,7 +92,7 @@ class Rectangle(Base):
             for i in range(0, self.y):
                 print("/n")
             for i in range(0, self.__height):
-                for k in range(0, self.y):
+                for k in range(0, self.x):
                     print(" ", end="")
                 for k in range(0, self.__width):
                     print("#", end="")
