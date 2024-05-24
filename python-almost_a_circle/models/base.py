@@ -6,6 +6,13 @@
 
 
 class Base:
+    """
+        Attributes:
+            __nb_objects: instance counter
+        Methods:
+            __init__: initializes instance with
+            user supplied id or id from Base instance counter
+    """
     __nb_objects =0
 
     def __init__(self, id=None):
