@@ -34,19 +34,19 @@ class TestRectangle(unittest.TestCase):
         r = Rectangle(1, 2, 0, 0)
         self.assertEqual(r.height, 2)
         r1 = Rectangle(1, "2", 0, 0)
-        self.assertNotEqual(r1.height, 2)
+        self.assertRaises(TypeError)
 
     def test_Rectangle_width(self):
         r = Rectangle(3, 2)
         self.assertEqual(r.width, 3)
         r1 = Rectangle("3", 1)
-        self.assertNotEqual(r1.width, 3)
+        self.assertRaises(TypeError)
 
     def test_Rectangle_x(self):
         r = Rectangle(1, 1, 12)
         self.assertEqual(r.x, 12)
         r1 = Rectangle(2, 2, "12")
-        self.assertNotEqual(r1.x, 12)
+        self.assertRaises(TypeError)
         r2 = Rectangle(3, 1)
         self.assertEqual(r2.x, 0)
 
@@ -54,6 +54,6 @@ class TestRectangle(unittest.TestCase):
         r = Rectangle(1, 1, 0, 4)
         self.assertEqual(r.y, 4)
         r1 = Rectangle(2, 1, 0, "4")
-        self.assertNotEqual(r1.y, 4)
+        self.assertRaises(TypeError)
         r2 = Rectangle(2, 3)
         self.assertEqual(r2.y, 0)
