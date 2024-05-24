@@ -7,6 +7,16 @@
 from models.base import Base
 
 class Rectangle(Base):
+    """
+        Attributes:
+            - id(int): user-specified. Alternatively
+            supplied by inherited instance counter
+
+            - width(int): the width of the rectangle
+            - height(int): the height of the rectangle
+            - x(int): the horizontal print axis
+            - y(int): the vertical print axis
+    """
     def __init__(self, width, height, x=0, y=0, id=None):
         super().__init__(id)
         self.__width = width
