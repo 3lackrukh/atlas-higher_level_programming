@@ -73,6 +73,5 @@ class Base:
         file_name = f"{cls.__name__}.json"
         if not os.path.exists(file_name):
             return []
-        else:
-            with open(file_name, "r") as f:
-                return cls.from_json_string(f.read())
+        with open(file_name, "r") as f:
+            return [cls.create(**i) for i in cls.from_json_string(f.read())]
