@@ -55,14 +55,14 @@ class Square(Rectangle):
                 if hasattr(self, key):
                     setattr(self, key, value)
 
-     def to_dictionary(self):
+    def to_dictionary(self):
         """
             Method constructs and returns:
             a dictionary representation of instance attributes
         """
         s_dict = {}
-        s_dict.update({"id": self.id})
-        s_dict.update({"size": self.size})
-        s_dict.update({"x": self.x})
-        s_dict.update({"y": self.y})
+        s_dict["id"] = self.id
+        s_dict["size"] = self.size
+        s_dict["x"] = self.x
+        s_dict["y"] = self.y
         return s_dict

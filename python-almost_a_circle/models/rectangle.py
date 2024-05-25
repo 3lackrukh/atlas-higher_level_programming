@@ -130,9 +130,9 @@ class Rectangle(Base):
             a dictionary representation of instance attributes
         """
         r_dict = {}
-        r_dict.update({"id": self.id})
-        r_dict.update({"width": self.width})
-        r_dict.update({"height": self.height})
-        r_dict.update({"x": self.x})
-        r_dict.update({"y": self.y})
+        r_dict["id"] = self.id
+        r_dict["width"] = self.width
+        r_dict["height"] = self.height
+        r_dict["x"] = self.x
+        r_dict["y"] = self.y
         return r_dict
