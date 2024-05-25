@@ -106,18 +106,13 @@ class Rectangle(Base):
         string += f" {self.x}/{self.y} - {self.width}/{self.height}"
         return string
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """
             Method updates instance parameters.
         """
-        args_len = len(args)
-        if args_len > 0:
-            self.id = args[0]
-        if args_len > 1:
-            self.width = args[1]
-        if args_len > 2:
-            self.height = args[2]
-        if args_len > 3:
-            self.x = args[3]
-        if args_len > 4:
-            self.y = args[4]
+        if args and args is not None:
+            locals().update(zip(['id', 'width', 'height', 'x', 'y'], args))
+        else:
+            for key, value in kwargs.items():
+                if hasattr(self, key):
+                    setattr(self, key, value)
