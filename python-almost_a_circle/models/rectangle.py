@@ -96,6 +96,7 @@ class Rectangle(Base):
                     print(" ", end="")
                 for k in range(0, self.__width):
                     print("#", end="")
+                print()
 
     def __str__(self):
         string = f"[Rectangle] ({self.id})"
