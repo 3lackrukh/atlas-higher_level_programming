@@ -64,5 +64,5 @@ class Base:
             temp = cls(1, 1)
         if cls.__name__ == "Square":
             temp = cls(1)
-        temp.updater(**dictionary)
+        temp.update(**dictionary)
         return temp
