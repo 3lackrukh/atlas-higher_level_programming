@@ -90,7 +90,7 @@ class Rectangle(Base):
             print()
         else:
             for i in range(0, self.y):
-                print("\n")
+                print()
             for i in range(0, self.__height):
                 for k in range(0, self.x):
                     print(" ", end="")
