@@ -4,6 +4,7 @@
 """
 import json
 
+
 class Base:
     """
         Attributes:
