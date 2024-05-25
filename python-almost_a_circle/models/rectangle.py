@@ -123,3 +123,19 @@ class Rectangle(Base):
             for key, value in kwargs.items():
                 if hasattr(self, key):
                     setattr(self, key, value)
+
+    def to_dictionary(self):
+        """
+            Method constructs and returns:
+            a dictionary representation of instance attributes
+        """
+        r_dict = {}
+        r_dict.update({"id": self.id})
+        r_dict.update({"width": self.width})
+        r_dict.update({"height": self.height})
+        r_dict.update({"x": self.x})
+        r_dict.update({"y": self.y})
+        return r_dict
+
+
+ 
