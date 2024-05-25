@@ -3,8 +3,6 @@
     This module defines object class Rectangle
         - Inherits from class Base
 """
-
-
 from models.base import Base
 
 
