@@ -31,7 +31,7 @@ class TestSquare(unittest.TestCase):
 
     def test_Square_size(self):
         s = Square(2, 0, 0)
-        self.assertEqual(s.height, 2)
+        self.assertEqual(s.size, 2)
         s1 = Square("2", 0, 0)
         self.assertRaises(TypeError)
 
@@ -41,7 +41,7 @@ class TestSquare(unittest.TestCase):
         s1 = Rectangle(2, "12")
         self.assertRaises(TypeError)
         s2 = Square(1)
-        self.assertEqual(r2.x, 0)
+        self.assertEqual(s2.x, 0)
 
     def test_Square_y(self):
         s = Square(1, 0, 4)
