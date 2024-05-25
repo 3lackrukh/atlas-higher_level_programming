@@ -99,11 +99,17 @@ class Rectangle(Base):
                 print()
 
     def __str__(self):
+        """
+            Method returns the string representation of instance.
+        """
         string = f"[Rectangle] ({self.id})"
         string += f" {self.x}/{self.y} - {self.width}/{self.height}"
         return string
 
     def update(self, *args):
+        """
+            Method updates instance parameters.
+        """
         args_len = len(args)
         if args_len > 2:
             self.id = args[1]
