@@ -111,13 +111,13 @@ class Rectangle(Base):
             Method updates instance parameters.
         """
         args_len = len(args)
+        if args_len > 0:
+            self.id = args[0]
+        if args_len > 1:
+            self.width = args[1]
         if args_len > 2:
-            self.id = args[1]
+            self.height = args[2]
         if args_len > 3:
-            self.width = args[2]
+            self.x = args[3]
         if args_len > 4:
-            self.height = args[3]
-        if args_len > 5:
-            self.x = args[4]
-        if args_len > 6:
-            self.y = args[5]
+            self.y = args[4]
