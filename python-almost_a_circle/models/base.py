@@ -52,3 +52,17 @@ class Base:
             return []
         else:
             return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        """
+            This method initializes an instance
+            of the specified sub-class and
+            sets instance attributes from dictionary.
+        """
+        if cls.__name__ == "Rectangle":
+            temp = cls(1, 1)
+        if cls.__name__ == "Square":
+            temp = cls(1)
+        temp.updater(**dictionary)
+        return temp
