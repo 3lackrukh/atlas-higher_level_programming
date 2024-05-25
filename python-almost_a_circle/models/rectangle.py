@@ -136,6 +136,3 @@ class Rectangle(Base):
         r_dict.update({"x": self.x})
         r_dict.update({"y": self.y})
         return r_dict
-
-
- 
