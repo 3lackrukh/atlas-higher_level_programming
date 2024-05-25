@@ -67,7 +67,7 @@ class Base:
             temp = cls(1)
         temp.update(**dictionary)
         return temp
-    
+
     @classmethod
     def load_from_file(cls):
         file_name = f"{cls.__name__}.json"
