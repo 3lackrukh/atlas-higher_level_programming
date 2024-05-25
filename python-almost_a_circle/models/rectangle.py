@@ -109,7 +109,9 @@ class Rectangle(Base):
             Method updates instance parameters.
         """
         if args and args is not None:
-            locals().update(zip(['id', 'width', 'height', 'x', 'y'], args))
+            for key, value in zip(['id', 'width', 'x', 'y'], args):
+                if hasattr(self, key):
+                    setattr(self, key, value)
         else:
             for key, value in kwargs.items():
                 if hasattr(self, key):
