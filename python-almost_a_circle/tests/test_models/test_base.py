@@ -28,3 +28,6 @@ class TestBase(unittest.TestCase):
         b1 = Base()
         self.assertIsInstance(b.id, int)
         self.assertIsInstance(b1.id, int)
+
+    if __name__ == "__main__":
+        unittest.main()
