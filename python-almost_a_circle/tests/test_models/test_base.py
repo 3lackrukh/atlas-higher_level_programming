@@ -12,12 +12,6 @@ class Test_Base(unittest.TestCase):
     """
         This module defines test methods for the object class Base.
     """
-    def setUp(self):
-        """
-            This method is called before each test.
-            Ensures Base class number of instances is refreshed.
-        """
-        Base._Base__nb_objects = 0
     
     def test_id(self):
         """
