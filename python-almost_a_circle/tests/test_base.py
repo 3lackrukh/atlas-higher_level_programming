@@ -13,7 +13,11 @@ class Test_Base(unittest.TestCase):
         This module defines test methods for the object class Base.
     """
     def setUp(self):
+        """
+            This method resets object counter to 0
+        """
         Base._Base__nb_objects = 0
+        self.base = Base()
 
     def test_id(self):
         """
