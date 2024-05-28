@@ -8,7 +8,7 @@ from models.rectangle import Rectangle
 from models.square import Square
 
 
-class Test_Base(unittest.TestCase):
+class TestBase(unittest.TestCase):
     """
         This module defines test methods for the object class Base.
     """
@@ -19,13 +19,14 @@ class Test_Base(unittest.TestCase):
         Base._Base__nb_objects = 0
         self.base = Base()
 
+    def tearDown(self):
+        del self.base
+
     def test_id(self):
         """
             Test ensures automatic id assignment
         """
-        Base._Base__nb_objects = 0
-        b1 = Base()
-        self.assertEqual(b1.id, 1)
+        self.assertEqual(self.base.id, 1)
 
     def test_base_id_assignment(self):
         """
