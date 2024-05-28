@@ -41,8 +41,8 @@ class TestBase(unittest.TestCase):
         """
             Test ensures user specified id functionality
         """
-        b1 = Base(98)
-        self.assertEqual(b1.id, 98)    
+        b1 = Base(89)
+        self.assertEqual(b1.id, 89)    
     
     def test_base_id_type(self):
         """
@@ -54,30 +54,32 @@ class TestBase(unittest.TestCase):
         self.assertIsInstance(b1.id, int)
 
     def test_nb_objects_increment(self):
-         """
-         Test ensures __nb_objects increments as expected
-         """
-         b1 = Base()
-         b2 = Base()
-         self.assertEqual(Base._Base__nb_objects, 2)
+        """
+        Test ensures __nb_objects increments as expected
+        """
+        b1 = Base()
+        b2 = Base()
+        self.assertEqual(Base._Base__nb_objects, 2)
 
     def test_to_json_string_none(self):
-         """
+        """
             Test ensures empty input to to_json_string
             returns empty list.
-         """
-         self.assertEqual(Base.to_json_string(None), "[]")
+        """
+        self.assertEqual(Base.to_json_string(None), "[]")
+        self.assertEqual(Base.to_json_string([]), "[]")
 
     def test_to_json_string(self):
         """
             Test ensures to_json_string returns
-            a list of dictionaries.
+            a list of dictionaries in string format.
         """
         dict1 = {"id": 1, "width": 10, "height": 20}
         dict2 = {"id": 2, "width": 20, "height": 10}
         dicts = [dict1, dict2]
         self.assertEqual(Base.to_json_string([dict1]), json.dumps([dict1]))
         self.assertEqual(Base.to_json_string(dicts), json.dumps(dicts))
+        self.assertIsInstance(Base.to_json_string(dicts), str)
 
     def test_save_to_file(self):
         """
