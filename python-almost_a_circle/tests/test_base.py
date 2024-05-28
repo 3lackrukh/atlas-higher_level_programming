@@ -25,16 +25,16 @@ class TestBase(unittest.TestCase):
         """
             Test ensures automatic id assignment
         """
+        b1 = Base()
         b2 = Base()
-        b3 = Base()
-        self.assertEqual(b3.id, b2.id - 1)
+        self.assertEqual(b1.id, b2.id - 1)
 
     def test_base_id(self):
         """
             Test ensures user specified id functionality
         """
-        b1 = Base(12)
-        self.assertEqual(b1.id, 12)    
+        b1 = Base(98)
+        self.assertEqual(b1.id, 98)    
     
     def test_base_id_type(self):
         """
