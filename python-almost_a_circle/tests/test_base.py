@@ -20,10 +20,18 @@ class TestBase(unittest.TestCase):
             Ensures Base class number of instances is refreshed.
         """
         Base._Base__nb_objects = 0
-
+    
     def test_base_id_empty(self):
         """
             Test ensures automatic id assignment
+        """
+        b1 = Base()
+        self.assertEqual(b1.id, 1)
+
+    def test_base_id_assignment(self):
+        """
+            Test ensures automatic id assignment
+            in multiple instances
         """
         b1 = Base()
         b2 = Base()
