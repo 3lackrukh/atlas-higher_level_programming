@@ -6,6 +6,9 @@ from models.rectangle import Rectangle
 from models.square import Square
 
 
+if __name__ == "__main__":
+        unittest.main()
+
 class TestBase(unittest.TestCase):
     """
         This module defines test methods for the object class Base.
@@ -31,9 +34,7 @@ class TestBase(unittest.TestCase):
             Test ensures user specified id functionality
         """
         b1 = Base(12)
-        self.assertEqual(b1.id, 12)
-
-    
+        self.assertEqual(b1.id, 12)    
     
     def test_base_id_type(self):
         """
@@ -43,6 +44,3 @@ class TestBase(unittest.TestCase):
         b1 = Base()
         self.assertIsInstance(b.id, int)
         self.assertIsInstance(b1.id, int)
-
-    if __name__ == "__main__":
-        unittest.main()
