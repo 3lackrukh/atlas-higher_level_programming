@@ -19,10 +19,11 @@ class TestBase(unittest.TestCase):
         """
         Base._Base__nb_objects = 0
     
-    def test_base_id_empty(self):
+    def test_id(self):
         """
             Test ensures automatic id assignment
         """
+        Base._Base__nb_objects = 0
         b1 = Base()
         self.assertEqual(b1.id, 1)
 
