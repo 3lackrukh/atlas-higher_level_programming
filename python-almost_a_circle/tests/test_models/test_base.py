@@ -8,7 +8,7 @@ from models.rectangle import Rectangle
 from models.square import Square
 
 
-class TestBase(unittest.TestCase):
+class Test_Base(unittest.TestCase):
     """
         This module defines test methods for the object class Base.
     """
