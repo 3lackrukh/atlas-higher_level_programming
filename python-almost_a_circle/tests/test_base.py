@@ -9,19 +9,13 @@ from models.square import Square
 
 
 class TestBase(unittest.TestCase):
-    """
-        This module defines test methods for the object class Base.
-    """
+    """This module defines test methods for the object class Base."""
     def setUp(self):
-        """
-            This method resets object counter to 0
-        """
+        """This method resets object counter to 0"""
         Base._Base__nb_objects = 0
 
     def test_id(self):
-        """
-            Test ensures automatic id assignment
-        """
+        """Test ensures automatic id assignment"""
         base = Base()
         base2 = Base()
         base3 = Base()
