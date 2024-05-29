@@ -31,3 +31,14 @@ class Test_Base(unittest.TestCase):
         """another test of making a new Base with default id"""
         self.assertIsNotNone(Base())
 
+    def test_to_json_string(self):
+        """
+            Test ensures to_json_string returns
+            a list of dictionaries in string format.
+        """
+        dict1 = {"id": 1, "width": 10, "height": 20}
+        dict2 = {"id": 2, "width": 20, "height": 10}
+        dicts = [dict1, dict2]
+        self.assertEqual(Base.to_json_string([dict1]), json.dumps([dict1]))
+        self.assertEqual(Base.to_json_string(dicts), json.dumps(dicts))
+        self.assertIsInstance(Base.to_json_string(dicts), str)
