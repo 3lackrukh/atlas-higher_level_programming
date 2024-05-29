@@ -28,6 +28,7 @@ class TestBase(unittest.TestCase):
         """
         self.base = Base()
         self.assertEqual(self.base.id, 1)
+        del self.base
 
     #def test_base_id_assignment(self):
         """
