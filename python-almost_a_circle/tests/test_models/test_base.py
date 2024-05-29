@@ -20,10 +20,11 @@ class TestBase(unittest.TestCase):
         Base._Base__nb_objects = 0
 
     def test_id(self):
-        """can we make a new Base"""
-        Base._Base__nb_objects = 0
-        base = Base()
-        self.assertEqual(base.id, 1)
+        """
+            Test ensures automatic id asignment
+        """
+        b1 = Base()
+        self.assertEqual(b1.id, 1)
 
     def test_make_a_base(self):
         """do the id's make sense"""
