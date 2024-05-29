@@ -9,11 +9,15 @@ from models.base import Base
 from models.rectangle import Rectangle
 from models.square import Square
 
-
-class Test_Base(unittest.TestCase):
+class TestBase(unittest.TestCase):
     """
-        test the class Base
+        This module defines test methods for the object class Base.
     """
+    def setUp(self):
+        """
+            This method resets object counter to 0
+        """
+        Base._Base__nb_objects = 0
 
     def test_id(self):
         """can we make a new Base"""
