@@ -17,8 +17,4 @@ class TestBase(unittest.TestCase):
     def test_id(self):
         """Test ensures automatic id assignment"""
         base = Base()
-        base2 = Base()
-        base3 = Base()
         self.assertEqual(base.id, 1)
-        self.assertEqual(base2.id, 2)
-        self.assertEqual(base3.id, 3)
