@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""unittests for base.py"""
+"""
+    unittests for base.py
+"""
 
 import os
 import unittest
@@ -9,7 +11,9 @@ from models.square import Square
 
 
 class Test_Base(unittest.TestCase):
-    """test the class Base"""
+    """
+        test the class Base
+    """
 
     def test_id(self):
         """can we make a new Base"""
