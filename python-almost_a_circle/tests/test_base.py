@@ -23,4 +23,6 @@ class TestBase(unittest.TestCase):
             Test ensures automatic id assignment
         """
         b1 = Base()
+        b2 = Base()
         self.assertEqual(b1.id, 1)
+        self.assertEqual(b2.id, 2)
