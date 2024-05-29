@@ -35,9 +35,12 @@ class TestBase(unittest.TestCase):
         b2 = Base()
         self.assertEquals(b2.id, b1.id + 1)
 
-    def test_assign_id(self):
-        """can we assign an id ourselves"""
-        self.assertEqual(98, Base(98).id)
+    def test_id_assignment(self):
+        """
+            Test ensures user specified id functionality.
+        """
+        b1 = Base(12)
+        self.assertEqual(b1.id, 12)
 
     def test_makes_a_base(self):
         """another test of making a new Base with default id"""
