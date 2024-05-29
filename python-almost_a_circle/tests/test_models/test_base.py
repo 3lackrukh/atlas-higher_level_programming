@@ -26,11 +26,14 @@ class TestBase(unittest.TestCase):
         b1 = Base()
         self.assertEqual(b1.id, 1)
 
-    def test_make_a_base(self):
-        """do the id's make sense"""
-        baseA = Base()
-        baseB = Base()
-        self.assertEquals(baseA.id, baseB.id - 1)
+    def test_base_id_assignment(self):
+        """
+            Test ensures automatic id assignment
+            in multiple instances.
+        """
+        b1 = Base()
+        b2 = Base()
+        self.assertEquals(b2.id, b1.id + 1)
 
     def test_assign_id(self):
         """can we assign an id ourselves"""
