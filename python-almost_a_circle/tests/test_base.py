@@ -26,6 +26,7 @@ class TestBase(unittest.TestCase):
         """
             Test ensures automatic id assignment
         """
+        self.base = Base()
         self.assertEqual(self.base.id, 1)
 
     #def test_base_id_assignment(self):
