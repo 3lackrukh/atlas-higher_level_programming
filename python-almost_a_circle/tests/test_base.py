@@ -17,13 +17,10 @@ class TestBase(unittest.TestCase):
             This method resets object counter to 0
         """
         Base._Base__nb_objects = 0
-        self.base = Base()
-
-    def tearDown(self):
-        del self.base
 
     def test_id(self):
         """
             Test ensures automatic id assignment
         """
-        self.assertEqual(self.base.id, 1)
+        b1 = Base()
+        self.assertEqual(b1.id, 1)
