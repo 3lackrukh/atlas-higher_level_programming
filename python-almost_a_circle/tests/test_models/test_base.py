@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-    unittests for base.py
+    This module defines test methods for the object class Base.
 """
 
 import os
