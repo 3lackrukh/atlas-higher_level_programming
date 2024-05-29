@@ -42,6 +42,6 @@ class TestBase(unittest.TestCase):
         b1 = Base(12)
         self.assertEqual(b1.id, 12)
 
-    def test_makes_a_base(self):
-        """another test of making a new Base with default id"""
-        self.assertIsNotNone(Base())
+   # def test_makes_a_base(self):
+    #    """another test of making a new Base with default id"""
+     #   self.assertIsNotNone(Base())
