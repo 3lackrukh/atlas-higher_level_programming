@@ -2,10 +2,10 @@
 """
 SQLPython - Object-relational mapping (Project 2193, Task 1)
 
-Write a script that lists all states 
+Write a script that lists all states
 with a name starting with N (upper N) from the database hbtn_0e_0_usa:
 
-* Your script should take 3 arguments: 
+* Your script should take 3 arguments:
 mysql username, mysql password and database name
 (no argument validation needed)
 
