@@ -46,7 +46,7 @@ if __name__ == "__main__":
         "ORDER BY `id` ASC")
 
     # Execute the query
-    cursor.execute(query, (state_name))
+    cursor.execute(query, (state_name,))
 
     # Fetch all results
     results = cursor.fetchall()
