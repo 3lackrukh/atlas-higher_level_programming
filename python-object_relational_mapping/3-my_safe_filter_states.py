@@ -42,11 +42,11 @@ if __name__ == "__main__":
     # prepare SQL query to accept the state_name argument
     query = (
         "SELECT * FROM `states` "
-        "WHERE `name` = BINARY '{}' "
-        "ORDER BY `id` ASC").format(state_name)
+        "WHERE `name` = BINARY %s "
+        "ORDER BY `id` ASC")
 
     # Execute the query
-    cursor.execute(query)
+    cursor.execute(query, (state_name,))
 
     # Fetch all results
     results = cursor.fetchall()
