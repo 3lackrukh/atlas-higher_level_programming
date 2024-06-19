@@ -11,7 +11,8 @@ mysql username, mysql password, database name and state name searched
 
 * You must use the module MySQLdb (import MySQLdb)
 
-* Your script should connect to a MySQL server running on localhost at port 3306
+* Your script should connect to a MySQL server
+running on localhost at port 3306
 
 * You must use format to create the SQL query with the user input
 
@@ -27,7 +28,7 @@ import MySQLdb
 if __name__ == "__main__":
     # Get command-line arguments
     username, password, db_name, state_name = (
-    sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4])
+        sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4])
 
     # Connect to MySQL server
     db = MySQLdb.connect(host="localhost", port=3306,
