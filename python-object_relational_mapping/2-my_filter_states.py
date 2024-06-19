@@ -37,11 +37,12 @@ if __name__ == "__main__":
 
     # prepare SQL query to accept the state_name argument
     query = (
-        f"SELECT * FROM `states` "
-        "WHERE `name` = %s "
-        "ORDER BY `id` ASC")
+        "SELECT * FROM `states` "
+        "WHERE `name` ='{}' "
+        "ORDER BY `id` ASC").format(state_name)
+
     # Execute the query
-    cursor.execute(query, (state_name,))
+    cursor.execute(query)
 
     # Fetch all results
     results = cursor.fetchall()
