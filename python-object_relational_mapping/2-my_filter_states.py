@@ -40,7 +40,7 @@ if __name__ == "__main__":
     # prepare SQL query to accept the state_name argument
     query = (
         "SELECT * FROM `states` "
-        "WHERE `name` = '{}' "
+        "WHERE `name` = BINARY '{}' "
         "ORDER BY `id` ASC").format(state_name)
 
     # Execute the query
