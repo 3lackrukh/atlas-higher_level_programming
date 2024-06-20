@@ -44,7 +44,7 @@ def list_cities_by_state(username, password, dbname):
         # Query all State objects, ordered by id
         cities = (
             session.query(City, State)
-            .filter(City.state_id).all())
+            .filter(City.state_id == State.id).all())
 
         # Print each state
         for city, state in cities:
