@@ -14,6 +14,7 @@ Classes:
     Base: The declarative base class for all models in this application.
 """
 
+
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 
