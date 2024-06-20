@@ -26,11 +26,11 @@ display Not found
 * Your code should not be executed when imported
 """
 
-
 import sys
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from model_state import Base, State
+
 
 def state_id_by_name(username, password, dbname, state_name):
     # Database connection
