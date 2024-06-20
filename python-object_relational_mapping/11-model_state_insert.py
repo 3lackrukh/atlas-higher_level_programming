@@ -12,16 +12,12 @@ to the database hbtn_0e_6_usa
 
 * You must import State and Base from model_state
 
-* Your script should connect to a MySQL server 
+* Your script should connect to a MySQL server
     running on localhost at port 3306
 
 * Print the new states.id after creation
 
 * Your code should not be executed when imported
-"""
-#!/usr/bin/env python3
-"""
-Adds a new State object named "Louisiana" to the hbtn_0e_6_usa database.
 """
 
 import sys
@@ -55,6 +51,7 @@ def state_insert(username, password, dbname):
     finally:
         # Close the session
         session.close()
+
 
 if __name__ == "__main__":
     # Get command-line arguments
