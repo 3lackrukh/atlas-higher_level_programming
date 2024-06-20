@@ -2,7 +2,7 @@
 """
 SQLPython - Object-relational mapping (Project 2193, Task 13)
 
-Write a script that deletes all State objects 
+Write a script that deletes all State objects
 that contain the letter a from the database hbtn_0e_6_usa
 
 * Your script should take 3 arguments:
@@ -50,7 +50,7 @@ def list_states_with_a(username, password, dbname):
 
         # commit changes
         session.commit()
-        
+
     finally:
         # Close the session
         session.close()
