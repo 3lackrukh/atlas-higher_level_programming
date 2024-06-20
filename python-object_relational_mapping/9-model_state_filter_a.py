@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Write a script that lists all State objects that contain the letter a 
+Write a script that lists all State objects that contain the letter a
 from the database hbtn_0e_6_usa
 
 * Your script should take 3 arguments:
@@ -40,10 +40,10 @@ def list_states_with_a(username, password, dbname):
     try:
         # Query all State objects that contain the letter 'a', ordered by id
         states = (
-        session.query(State)
-        .filter(State.name.contains('a'))
-        .order_by(State.id.asc())
-        .all())
+            session.query(State)
+            .filter(State.name.contains('a'))
+            .order_by(State.id.asc())
+            .all())
 
         # Print each state
         for state in states:
