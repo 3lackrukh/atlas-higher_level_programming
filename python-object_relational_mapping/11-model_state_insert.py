@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """
-SQLPython - Object-relational mapping (Project 2193, Task 9)
+SQLPython - Object-relational mapping (Project 2193, Task 11)
 
-Write a script that lists all State objects that contain the letter a
-from the database hbtn_0e_6_usa
+Write a script that adds the State object “Louisiana”
+to the database hbtn_0e_6_usa
 
 * Your script should take 3 arguments:
     mysql username, mysql password and database name
@@ -12,12 +12,16 @@ from the database hbtn_0e_6_usa
 
 * You must import State and Base from model_state
 
-* Your script should connect to a MySQL server
+* Your script should connect to a MySQL server 
     running on localhost at port 3306
 
-* Results must be sorted in ascending order by states.id
+* Print the new states.id after creation
 
 * Your code should not be executed when imported
+"""
+#!/usr/bin/env python3
+"""
+Adds a new State object named "Louisiana" to the hbtn_0e_6_usa database.
 """
 
 import sys
@@ -26,7 +30,7 @@ from sqlalchemy.orm import sessionmaker
 from model_state import Base, State
 
 
-def list_states_with_a(username, password, dbname):
+def state_insert(username, password, dbname):
     # Database connection
     cnx = f'mysql+mysqldb://{username}:{password}@localhost/{dbname}'
 
@@ -40,24 +44,21 @@ def list_states_with_a(username, password, dbname):
     session = Session()
 
     try:
-        # Query all State objects that contain the letter 'a', ordered by id
-        states = (
-            session.query(State)
-            .filter(State.name.contains('a'))
-            .order_by(State.id.asc())
-            .all())
+        # Add a new State object named "Louisiana"
+        new_state = State(name="Louisiana")
+        session.add(new_state)
+        session.commit()
 
-        # Print each state
-        for state in states:
-            print(f"{state.id}: {state.name}")
+        # Print the new state's id
+        print(f"{new_state.id}")
+
     finally:
         # Close the session
         session.close()
-
 
 if __name__ == "__main__":
     # Get command-line arguments
     username, password, dbname = sys.argv[1:]
 
     # Call the main function with the arguments
-    list_states_with_a(username, password, dbname)
+    state_insert(username, password, dbname)
