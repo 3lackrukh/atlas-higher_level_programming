@@ -25,6 +25,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from model_state import Base, State
 
+
 def list_states(username, password, dbname):
     # Database connection
     cnx = f'mysql+mysqldb://{username}:{password}@localhost/{dbname}'
@@ -49,9 +50,10 @@ def list_states(username, password, dbname):
         # Close the session
         session.close()
 
+
 if __name__ == "__main__":
     # Get command-line arguments
     username, password, dbname = sys.argv[1:]
-    
+
     # Call the main function with the arguments
     list_states(username, password, dbname)
