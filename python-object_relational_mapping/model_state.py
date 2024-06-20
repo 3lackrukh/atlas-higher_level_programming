@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """
 Model for the States table in a MySQL database.
 
