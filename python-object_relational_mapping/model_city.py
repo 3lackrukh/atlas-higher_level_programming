@@ -39,5 +39,5 @@ class City(Base):
                 unique=True)
     name = Column(String(128), nullable=False)
     state_id = Column(Integer,
-                    ForeignKey("states.id"),
-                    nullable=False)
+                      ForeignKey("states.id"),
+                      nullable=False)
