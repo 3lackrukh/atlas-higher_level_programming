@@ -1,10 +1,10 @@
 #!/usr/bin/node
 
 if (!isNaN(Number(process.argv[2]))) {
-  let i = process.argv[2];
+  var i = process.argv[2];
   while (i > 0) {
     xString = '';
-    let k = process.argv[2];
+    var k = process.argv[2];
     while (k > 0) {
       xString += 'X';
       k--;
