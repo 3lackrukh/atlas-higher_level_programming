@@ -1,0 +1,1 @@
+This folder contains files written to practice concepts related to objects, scopes, and closures in javascript.
