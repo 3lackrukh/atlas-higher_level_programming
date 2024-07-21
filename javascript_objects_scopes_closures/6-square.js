@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-const square = require('./5-s');
+const square = require('./5-square');
 
 class Square extends square {
   constructor (size) {
